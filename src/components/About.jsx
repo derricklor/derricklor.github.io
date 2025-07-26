@@ -1,11 +1,11 @@
 import React from 'react';
 
-function MainContentArea() {
+function About() {
     return (
         <div className="container mx-auto flex-grow p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
             {/* Left Sidebar (visible on md screens and up) */}
-            <aside className="bg-white p-6 rounded-lg shadow-md md:col-span-1 lg:col-span-1 order-2 md:order-1 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
+            <aside className="bg-white p-6 rounded-lg shadow-md max-h-fit md:col-span-1 lg:col-span-1 order-2 md:order-1 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
                 <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Left Sidebar</h2>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-400">
                     <li><a href="#" className="hover:text-blue-500 transition-colors duration-300 dark:hover:text-blue-300">Category 1</a></li>
@@ -45,10 +45,12 @@ function MainContentArea() {
                 <p className="text-gray-700 leading-relaxed mt-4 dark:text-gray-300">
                     Feel free to resize your browser window to see how the layout adapts!
                 </p>
+                <p className="text-gray-700 leading-relaxed mt-4 dark:text-gray-300"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis delectus inventore exercitationem quod dolorum? Iusto, voluptas reiciendis a totam, hic dicta, ullam tempora facilis expedita ipsam optio quos? Minus, facilis.</p>
+                <p className="text-gray-700 leading-relaxed mt-4 dark:text-gray-300"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis delectus inventore exercitationem quod dolorum? Iusto, voluptas reiciendis a totam, hic dicta, ullam tempora facilis expedita ipsam optio quos? Minus, facilis.</p>
             </main>
 
             {/* Right Sidebar (visible on lg screens and up) */}
-            <aside className="bg-white p-6 rounded-lg shadow-md lg:col-span-1 order-3 md:col-span-3 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
+            <aside className="bg-white p-6 rounded-lg shadow-md max-h-fit lg:col-span-1 order-3 md:col-span-3 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
                 <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Right Sidebar</h2>
                 <p className="text-gray-700 leading-relaxed mb-4 dark:text-gray-300">
                     This sidebar contains additional information or widgets. On smaller screens (mobile and tablet),
@@ -67,4 +69,4 @@ function MainContentArea() {
     );
 }
 
-export default MainContentArea;
+export default About;

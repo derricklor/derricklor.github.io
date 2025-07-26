@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 function Header({ isDarkTheme, toggleTheme }) {
     return (
@@ -7,10 +8,15 @@ function Header({ isDarkTheme, toggleTheme }) {
                 <h1 className="text-2xl font-bold">Responsive Layout</h1>
                 <nav className="flex items-center space-x-4">
                     <ul className="flex space-x-4">
-                        <li><a href="#" className="hover:text-blue-200 transition-colors duration-300">Home</a></li>
-                        <li><a href="#" className="hover:text-blue-200 transition-colors duration-300">About</a></li>
-                        <li><a href="#" className="hover:text-blue-200 transition-colors duration-300">Services</a></li>
-                        <li><a href="#" className="hover:text-blue-200 transition-colors duration-300">Contact</a></li>
+                        <Link to="/"><li className="hover:text-blue-200 transition-colors duration-300">
+                            Home</li>
+                        </Link>
+                        <Link to="/about"><li className="hover:text-blue-200 transition-colors duration-300">
+                            About</li>
+                        </Link>
+                        <Link to="/contact"><li className="hover:text-blue-200 transition-colors duration-300">
+                            Contact</li>
+                        </Link>
                     </ul>
                     {/* Theme Toggle Button */}
                     <button

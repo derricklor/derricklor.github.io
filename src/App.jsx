@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import MainContentArea from './components/MainContentArea.jsx';
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import Home from './components/Home.jsx';
+import About from './components/About.jsx';
+import Contact from './components/Contact.jsx';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 
@@ -69,11 +72,17 @@ function App() {
         // Body with base light mode styles and dark mode variants
         <div className="flex flex-col min-h-screen font-inter bg-gray-100 text-gray-900 transition-colors duration-300 ease-in-out dark:bg-gray-900 dark:text-gray-100">
 
-            <Header isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
-
-            <MainContentArea />
-
+            <HashRouter basename="/">
+                <Header isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
+                <Routes>
+                    <Route path='/' element={<Home/>}/>
+                    <Route path='/about' element={<About />}/>
+                    <Route path='/contact' element={<Contact />}/>
+                    
+                </Routes>
+            </HashRouter>
             <Footer isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
+
         </div>
     );
 }
