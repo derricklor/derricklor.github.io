@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
+
 import Home from './components/Home.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
+import NotFound from './components/NotFound.jsx';
 
 // Custom scrollbar styles (cannot be directly converted to Tailwind classes or React inline styles)
 // These would typically be in a global CSS file, but for a self-contained example,
@@ -78,6 +80,8 @@ function App() {
                     <Route path='/' element={<Home/>}/>
                     <Route path='/about' element={<About />}/>
                     <Route path='/contact' element={<Contact />}/>
+                    <Route path='/*' element={<NotFound />}/>
+
                     
                 </Routes>
             </HashRouter>
