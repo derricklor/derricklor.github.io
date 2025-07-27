@@ -6,7 +6,7 @@ function Home() {
         <div className="container mx-auto flex-grow p-4 grid gap-6">
 
             {/* Main Content */}
-            <main className="bg-white p-6 rounded-lg shadow-md md:col-span-2 lg:col-span-2 order-1 md:order-2 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
+            <main className="bg-white p-6 rounded-lg shadow-md col-span-2  dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Home</h2>
                 <p className="text-gray-700 leading-relaxed mb-4 dark:text-gray-300">
                     This is the primary content section of the page. On small screens, this content will appear directly below the header.
