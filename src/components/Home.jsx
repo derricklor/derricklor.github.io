@@ -44,11 +44,12 @@ function Home() {
                         </div>
 
                         <div className="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-                            <ProjectCard engine="React, SQL, Javascript" title="Movie Database Website" desc="A single page application to distribute informational pages about movies." link="#" />
-                            <ProjectCard engine="YOLO, Python, Roboflow" title="Simple Face Detection & Recognition" desc="Trained face detector and simple face recognizer that distinguishes between whitelist and unrecognized faces." link="#" />
-                            <ProjectCard engine="Tensorflow, Python" title="Guitar Chord Predicton Model" desc="Used machine learning to train a model to predict the guitar chord being played." link="#" />
-                            <ProjectCard engine="SQL, PHP, Group" title="Sunday Daycare Website" desc="A student & teacher platform for distributing reading assignments and materials." link="#" />
-                            <ProjectCard engine="Unity, C#, Group" title="Dungeon Quest" desc="Educational quiz game for 6th graders and above." link="#" />
+                            <ProjectCard engine="React, SQL, Javascript" title="Movie Database Website" desc="A single page application to distribute informational pages about movies." link="https://github.com/derricklor/comp5130" />
+                            <ProjectCard engine="YOLO, Python, Roboflow" title="Simple Face Detection & Recognition" desc="Trained face detector and simple face recognizer that distinguishes between whitelist and unrecognized faces." link="https://github.com/derricklor/comp5230project" />
+                            <ProjectCard engine="Tensorflow, Python" title="Guitar Chord Predicton Model" desc="Used machine learning to train a model to predict the guitar chord being played." link="https://github.com/gauravmodak2001/Guitar_Chord_Pred" />
+                            <ProjectCard engine="Pygame, Python" title="AI Omok" desc="Play a game against a computer AI or a second player." link="https://github.com/derricklor/Omok" />
+                            <ProjectCard engine="SQL, PHP, Group" title="Sunday Daycare Website" desc="A student & teacher platform for distributing reading assignments and materials." link="https://github.com/derricklor/database2project" />
+                            <ProjectCard engine="Unity, C#, Group" title="Dungeon Quest" desc="Educational quiz game for 6th graders and above." link="https://derricklor.github.io/SWEProject/Website" />
                         </div>
                     </div>
                 </section>
