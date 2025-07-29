@@ -70,7 +70,7 @@ function About() {
                 </p>
                 <br></br>
                 <p className="text-gray-700 leading-relaxed mb-4 dark:text-gray-300">
-                    In 2023, I started my Master's degree program in General Computer Science, which further deepened my understanding of computer science disciplines 
+                    In 2025, I completed my Master's degree program in General Computer Science, which further deepened my understanding of computer science disciplines 
                     like algorithms, operating systems, machine learning, reinforcement learning, artificial intelligence, web design, and computer vision.
                 </p>
                 
