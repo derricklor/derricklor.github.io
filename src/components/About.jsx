@@ -7,9 +7,9 @@ function About() {
 
             {/* Left Sidebar (visible on md screens and up) */}
             <aside className="bg-white p-6 rounded-lg shadow-md max-h-fit md:col-span-1 lg:col-span-1 order-2 md:order-1 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
-                <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Derrick Lor</h2>
+                <h2 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">Derrick Lor</h2>
                 
-                <img className="w-full block" src="/profilepic_derricklor.png" alt="profile image"></img>
+                <img className="w-full block mb-2" src="/profilepic_derricklor.png" alt="profile image"></img>
                 <span class="bg-gray-300 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-gray-300">
                     Software Developer
                 </span>
@@ -58,7 +58,9 @@ function About() {
 
             {/* Main Content */}
             <main className="bg-white p-6 rounded-lg shadow-md md:col-span-2 lg:col-span-2 order-1 md:order-2 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
-                <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">About Me</h2>
+                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                    About
+                </h2>
                 <p className="text-gray-700 leading-relaxed mt-4 dark:text-gray-300">
                     I am a software developer with a passion for creating efficient and user-friendly applications. My expertise lies in full-stack development, and I enjoy working with modern technologies to build scalable solutions.
                 </p>
@@ -73,39 +75,47 @@ function About() {
                     In 2025, I completed my Master's degree program in General Computer Science, which further deepened my understanding of computer science disciplines 
                     like algorithms, operating systems, machine learning, reinforcement learning, artificial intelligence, web design, and computer vision.
                 </p>
-                
-                <Notice color="gray" message={
-                    <div>
-                        <h3 className="text-lg font-medium mb-2 text-gray-800 dark:text-gray-100">Key Features:</h3>
-                        <ul className="list-disc list-inside text-gray-600 space-y-1 dark:text-gray-400">
-                            <li>Mobile-first approach: Optimized for small screens first.</li>
-                            <li>Responsive grid layout using Tailwind CSS.</li>
-                            <li>Header, main content, two sidebars, and footer sections.</li>
-                            <li>Clean and modern aesthetic with rounded corners and shadows.</li>
-                        </ul>
-                    </div>
-                }/>
-                <p className="text-gray-700 leading-relaxed mt-4 dark:text-gray-300">
-                    Feel free to resize your browser window to see how the layout adapts!
-                </p>
-                <p className="text-gray-700 leading-relaxed mt-4 dark:text-gray-300">
-                    Feel free to resize your browser window to see how the layout adapts!
-                </p>
             </main>
 
             {/* Right Sidebar (visible on lg screens and up) */}
             <aside className="bg-white p-6 rounded-lg shadow-md max-h-fit lg:col-span-1 order-3 md:col-span-3 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
-                <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Right Sidebar</h2>
-                <p className="text-gray-700 leading-relaxed mb-4 dark:text-gray-300">
-                    This sidebar contains additional information or widgets. On smaller screens (mobile and tablet),
-                    it will stack below the main content. On larger screens (desktop), it will appear to the right.
-                </p>
-                <Notice color="green" message="Quick links or related articles could go here."/>
                 
-                <ul className="mt-4 space-y-2 text-gray-600 dark:text-gray-400">
-                    <li><a href="#" className="hover:text-green-500 transition-colors duration-300 dark:hover:text-green-300">Related Link 1</a></li>
-                    <li><a href="#" className="hover:text-green-500 transition-colors duration-300 dark:hover:text-green-300">Related Link 2</a></li>
-                </ul>
+                <ol className="relative border-s border-gray-200 dark:border-gray-700">
+                    <li className="mb-10 ms-4">
+                        <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                            May 2022</time>
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                            Graduated Bachelor's in CS</h3>
+                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                            University of Massachusetts, Lowell, MA.
+                            Overall GPA: 3.514, GPA in Major: 3.703
+                        </p>
+                    </li>
+                    <li className="mb-10 ms-4">
+                        <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                            May 2025</time>
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                            Graduated Master's in CS</h3>
+                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                            University of Massachusetts, Lowell, MA.
+                            Cumulative GPA 3.81
+                        </p>
+                    </li>
+                    <li className="mb-10 ms-4">
+                        <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                            Onwards</time>
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                            Working on it!</h3>
+                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                            ...
+                        </p>
+                    </li>
+                </ol>
+
+
             </aside>
 
         </div>

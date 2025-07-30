@@ -15,17 +15,18 @@ export default function ProjectCard({ engine, title, desc, link}) {
             <p className="text-lg font-normal text-gray-500 dark:text-gray-400">
                 {desc}
             </p>
-            <a href={link} title={'View ' + title}
-                className="text-black dark:text-white bg-primary-700 justify-center hover:bg-primary-800 inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-                role="button">
-                View
-                <svg aria-hidden="true" className="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                    fill="currentColor">
-                    <path fill-rule="evenodd"
-                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                        clip-rule="evenodd" />
-                </svg>
-            </a>
+                <a href={link} title={'View ' + title}
+                    className="text-black dark:text-gray-300 justify-center bg-gradient-to-r from-blue-200 to-purple-200 dark:from-blue-900 dark:to-purple-900  inline-flex items-center focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                    role="button"
+                    target="_blank">
+                    View
+                    <svg aria-hidden="true" className="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
         </div>
     )
 };

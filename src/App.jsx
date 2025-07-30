@@ -82,7 +82,6 @@ function App() {
                     <Route path='/contact' element={<Contact />}/>
                     <Route path='/*' element={<NotFound />}/>
 
-                    
                 </Routes>
             </HashRouter>
             <Footer isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />

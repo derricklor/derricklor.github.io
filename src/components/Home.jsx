@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -8,31 +9,35 @@ function Home() {
             {/* Main Content */}
             <main className="bg-white p-6 rounded-lg shadow-md col-span-2  dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Home</h2>
-                <p className="text-gray-700 leading-relaxed mb-4 dark:text-gray-300">
-                    This is the primary content section of the page. On small screens, this content will appear directly below the header.
-                    As the screen size increases (medium and large breakpoints), the sidebars will appear alongside this main content,
-                    creating a multi-column layout. The design prioritizes readability and accessibility across various devices.
-                </p>
-                <p className="text-gray-700 leading-relaxed mb-4 dark:text-gray-300">
-                    We're using Tailwind CSS for a utility-first approach to styling, which makes it easy to build responsive designs
-                    without writing custom CSS for every breakpoint. The `grid` and `flex` utilities are key to achieving this flexible layout.
-                </p>
-                <div className="bg-gray-100 p-4 rounded-md border border-gray-200 dark:bg-gray-700 dark:border-gray-600">
-                    <h3 className="text-lg font-medium mb-2 text-gray-800 dark:text-gray-100">Key Features:</h3>
-                    <ul className="list-disc list-inside text-gray-600 space-y-1 dark:text-gray-400">
-                        <li>Mobile-first approach: Optimized for small screens first.</li>
-                        <li>Responsive grid layout using Tailwind CSS.</li>
-                        <li>Header, main content, two sidebars, and footer sections.</li>
-                        <li>Clean and modern aesthetic with rounded corners and shadows.</li>
-                    </ul>
-                </div>
-                <p className="text-gray-700 leading-relaxed mt-4 dark:text-gray-300">
-                    Feel free to resize your browser window to see how the layout adapts!
-                </p>
-                <p className="text-gray-700 leading-relaxed mt-4 dark:text-gray-300"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis delectus inventore exercitationem quod dolorum? Iusto, voluptas reiciendis a totam, hic dicta, ullam tempora facilis expedita ipsam optio quos? Minus, facilis.</p>
-                <p className="text-gray-700 leading-relaxed mt-4 dark:text-gray-300"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis delectus inventore exercitationem quod dolorum? Iusto, voluptas reiciendis a totam, hic dicta, ullam tempora facilis expedita ipsam optio quos? Minus, facilis.</p>
+                
+                <section className="bg-white rounded-lg dark:bg-gray-800">
+                    <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                        <img className="w-full" src="IMG_7231.jpg" alt="dashboard image"></img>
+                        <div className="mt-4 md:mt-0">
+                            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                                Derrick Lor
+                            </h2>
+                            <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+                                M.S. Graduate of University of Massachusetts Lowell. Interested in C++, HTML, CSS, Javascript, Python, Machine Learning, AI, MySQL, etc.
+                            </p>
+                            <Link to="/about">
+                                <button className="flex py-3 px-5 text-sm font-medium text-center text-black dark:text-gray-300 rounded-lg bg-gradient-to-r from-blue-200 to-purple-200 dark:from-blue-900 dark:to-purple-900 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                    About
+                                    <svg aria-hidden="true" className="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
+                </section>
+                
+                {/*<p className="text-gray-700 leading-relaxed mt-4 dark:text-gray-300"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis delectus inventore exercitationem quod dolorum? Iusto, voluptas reiciendis a totam, hic dicta, ullam tempora facilis expedita ipsam optio quos? Minus, facilis.</p>*/}
             
-                <section className="bg-gray-100 dark:bg-gray-900 antialiased">
+                <section className="bg-gray-100 p-6 rounded-lg border-1 border-gray-300 dark:border-gray-600 shadow-md col-span-2 dark:bg-gray-900 dark:text-gray-200 dark:shadow-xl antialiased ">
                     <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
                         <div className="max-w-2xl mx-auto text-center">
                             <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
@@ -48,6 +53,7 @@ function Home() {
                             <ProjectCard engine="YOLO, Python, Roboflow" title="Simple Face Detection & Recognition" desc="Trained face detector and simple face recognizer that distinguishes between whitelist and unrecognized faces." link="https://github.com/derricklor/comp5230project" />
                             <ProjectCard engine="Tensorflow, Python" title="Guitar Chord Predicton Model" desc="Used machine learning to train a model to predict the guitar chord being played." link="https://github.com/gauravmodak2001/Guitar_Chord_Pred" />
                             <ProjectCard engine="Pygame, Python" title="AI Omok" desc="Play a game against a computer AI or a second player." link="https://github.com/derricklor/Omok" />
+                            <ProjectCard engine="Figma" title="Nature Pass" desc="An app interface that allows mobile users to explore and find hidden gems in nature." link="https://github.com/derricklor/hci-naturepass" />
                             <ProjectCard engine="SQL, PHP, Group" title="Sunday Daycare Website" desc="A student & teacher platform for distributing reading assignments and materials." link="https://github.com/derricklor/database2project" />
                             <ProjectCard engine="Unity, C#, Group" title="Dungeon Quest" desc="Educational quiz game for 6th graders and above." link="https://derricklor.github.io/SWEProject/Website" />
                         </div>

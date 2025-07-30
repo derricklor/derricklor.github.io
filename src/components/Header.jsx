@@ -5,7 +5,7 @@ function Header({ isDarkTheme, toggleTheme }) {
     return (
         <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 shadow-lg rounded-b-lg">
             <div className="container mx-auto flex justify-between items-center">
-                <h1 className="text-2xl font-bold">Responsive Layout</h1>
+                <h1 className="text-2xl font-bold">Derrick Lor</h1>
                 <nav className="flex items-center space-x-4">
                     <ul className="flex space-x-4">
                         <Link to="/"><li className="hover:text-blue-200 transition-colors duration-300">
