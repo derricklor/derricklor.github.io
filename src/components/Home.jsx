@@ -57,6 +57,17 @@ function Home() {
                             <ProjectCard engine="SQL, PHP, Group" title="Sunday Daycare Website" desc="A student & teacher platform for distributing reading assignments and materials." link="https://github.com/derricklor/database2project" />
                             <ProjectCard engine="Unity, C#, Group" title="Dungeon Quest" desc="Educational quiz game for 6th graders and above." link="https://derricklor.github.io/SWEProject/Website" />
                         </div>
+
+                        <div className="mt-16 max-w-2xl mx-auto text-center">
+                            <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+                                My other webapps
+                            </h2>
+                        </div>
+
+                        <div className="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+                            <ProjectCard engine="React, Javascript" title="Lights Out Mini Game" desc="A fun game where you must turn off all the lights." link="https://derricklor.github.io/LightsOutMiniGame" />
+                            <ProjectCard engine="React, Javascript" title="Unix Timestamp Generator" desc="Enter a data and time to generate a Unix Timestamp." link="https://derricklor.github.io/UnixTimeStampGenerator" />
+                        </div>
                     </div>
                 </section>
             </main>
