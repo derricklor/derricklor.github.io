@@ -67,6 +67,7 @@ function Home() {
                         <div className="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
                             <ProjectCard engine="React, Javascript" title="Lights Out Mini Game" desc="A fun game where you must turn off all the lights." link="https://derricklor.github.io/LightsOutMiniGame" />
                             <ProjectCard engine="React, Javascript" title="Unix Timestamp Generator" desc="Enter a data and time to generate a Unix Timestamp." link="https://derricklor.github.io/UnixTimeStampGenerator" />
+                            <ProjectCard engine="React, Javascript" title="OllamaChat" desc="A web interface for interacting with Ollama local models." link="https://github.com/derricklor/ollamachat" />
                         </div>
                     </div>
                 </section>
