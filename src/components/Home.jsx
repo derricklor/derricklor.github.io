@@ -1,8 +1,22 @@
-import React from 'react';
+import {useEffect} from 'react';
 import ProjectCard from './ProjectCard';
 import { Link } from 'react-router-dom';
 
 function Home() {
+    // cards transition effect
+    useEffect(() => {
+        const cards = document.querySelectorAll(".project-card");
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove("opacity-0", "translate-y-10");
+                    entry.target.classList.add("opacity-100", "translate-y-0");
+                }
+            })
+        }, {threshold: 0.1})
+        cards.forEach(card=> observer.observe(card));
+    }, []);
+    
     return (
         <div className="container mx-auto flex-grow p-4 grid gap-6">
 
@@ -25,9 +39,9 @@ function Home() {
                                     About
                                     <svg aria-hidden="true" className="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                         fill="currentColor">
-                                        <path fill-rule="evenodd"
+                                        <path fillRule="evenodd"
                                             d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                            clip-rule="evenodd" />
+                                            clipRule="evenodd" />
                                     </svg>
                                 </button>
                             </Link>
