@@ -1,7 +1,9 @@
 export default function ProjectCard({ engine, title, desc, link}) {
 
     return (
-        <div className="project-card space-y-4 opacity-0 translate-y-10 transition-all duration-700">
+        <div className="project-card space-y-4 opacity-0 translate-y-10 transition-all duration-700 
+        border-2 border-gray-300 bg-white p-6 rounded-lg shadow-md hover:shadow-xl dark:border-gray-600 dark:bg-gray-600 
+        dark:text-gray-200 dark:shadow-md dark:hover:shadow-xl antialiased">
             <span
                 className="bg-gray-300 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
                 {engine}

@@ -72,7 +72,7 @@ function App() {
 
     return (
         // Body with base light mode styles and dark mode variants
-        <div className="flex flex-col min-h-screen font-inter bg-gray-100 text-gray-900 transition-colors duration-300 ease-in-out dark:bg-gray-900 dark:text-gray-100">
+        <div className="flex flex-col min-h-screen font-inter bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out dark:bg-gray-900 dark:text-gray-100">
 
             <HashRouter basename="/">
                 <Header isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />

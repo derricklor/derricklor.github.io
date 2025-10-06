@@ -21,12 +21,12 @@ function Home() {
         <div className="container mx-auto flex-grow p-4 grid gap-6">
 
             {/* Main Content */}
-            <main className="bg-white p-6 rounded-lg shadow-md col-span-2  dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
+            <main className="bg-gray-100 p-6 rounded-lg shadow-md col-span-2  dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Home</h2>
                 
-                <section className="bg-white rounded-lg dark:bg-gray-800">
+                <section className="">
                     <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-                        <img className="w-full" src="IMG_7231.jpg" alt="dashboard image"></img>
+                        <img className="w-full rounded-xl" src="IMG_7231.jpg" alt="dashboard image"></img>
                         <div className="mt-4 md:mt-0">
                             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                                 Derrick Lor
@@ -51,7 +51,7 @@ function Home() {
                 
                 {/*<p className="text-gray-700 leading-relaxed mt-4 dark:text-gray-300"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis delectus inventore exercitationem quod dolorum? Iusto, voluptas reiciendis a totam, hic dicta, ullam tempora facilis expedita ipsam optio quos? Minus, facilis.</p>*/}
             
-                <section className="bg-gray-100 p-6 rounded-lg border-1 border-gray-300 dark:border-gray-600 shadow-md col-span-2 dark:bg-gray-900 dark:text-gray-200 dark:shadow-xl antialiased ">
+                <section className="bg-gray-50 p-6 rounded-lg border-1 border-gray-300 dark:border-gray-600 shadow-md col-span-2 dark:bg-gray-700 dark:text-gray-200 dark:shadow-xl antialiased ">
                     <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
                         <div className="max-w-2xl mx-auto text-center">
                             <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">

@@ -6,10 +6,10 @@ function About() {
         <div className="container mx-auto flex-grow p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
             {/* Left Sidebar (visible on md screens and up) */}
-            <aside className="bg-white p-6 rounded-lg shadow-md max-h-fit md:col-span-1 lg:col-span-1 order-2 md:order-1 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
+            <aside className="bg-white p-6 rounded-lg shadow-md h-fit md:col-span-1 lg:col-span-1 order-2 md:order-1 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
                 <h2 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">Derrick Lor</h2>
                 
-                <img className="w-full block mb-2" src="/profilepic_derricklor.png" alt="profile image"></img>
+                <img className="w-full block mb-2 rounded-xl" src="/profilepic_derricklor.png" alt="profile image"></img>
                 <span class="bg-gray-300 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-gray-300">
                     Software Developer
                 </span>
@@ -61,24 +61,34 @@ function About() {
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                     About
                 </h2>
-                <p className="text-gray-700 leading-relaxed mt-4 dark:text-gray-300">
-                    I am a software developer with a passion for creating efficient and user-friendly applications. My expertise lies in full-stack development, and I enjoy working with modern technologies to build scalable solutions.
-                </p>
+                <section className="border-1 border-gray-200 p-2 rounded-lg dark:border-gray-700">
+                    <p className="text-gray-700 leading-relaxed dark:text-gray-300">
+                        I am a software developer with a passion for creating efficient and user-friendly applications. My expertise lies in full-stack development, and I enjoy working with modern technologies to build scalable solutions.
+                    </p>
+                </section>
+
                 <br></br>
-                <p className="text-gray-700 leading-relaxed mb-4 dark:text-gray-300">
-                    I started my journey in programming during my high school years, where I discovered my love for coding. 
-                    Since then, I have honed my skills through college by building various projects either solo or with collaborations.
-                    I graduated with a Bachelor's degree in Computer Science in 2022, and I am always eager to learn new technologies and improve my skills.
-                </p>
+
+                <section className="border-1 border-gray-200 p-2 rounded-lg dark:border-gray-700">
+                    <p className="text-gray-700 leading-relaxed mb-4 dark:text-gray-300">
+                        I started my journey in programming during my high school years, where I discovered my love for coding. 
+                        Since then, I have honed my skills through college by building various projects either solo or with collaborations.
+                        I graduated with a Bachelor's degree in Computer Science in 2022, and I am always eager to learn new technologies and improve my skills.
+                    </p>
+                </section>
+                
                 <br></br>
-                <p className="text-gray-700 leading-relaxed mb-4 dark:text-gray-300">
-                    In 2025, I completed my Master's degree program in General Computer Science, which further deepened my understanding of computer science disciplines 
-                    like algorithms, operating systems, machine learning, reinforcement learning, artificial intelligence, web design, and computer vision.
-                </p>
+
+                <section className="border-1 border-gray-200 p-2 rounded-lg dark:border-gray-700">
+                    <p className="text-gray-700 leading-relaxed mb-4 dark:text-gray-300">
+                        In 2025, I completed my Master's degree program in General Computer Science, which further deepened my understanding of computer science disciplines 
+                        like algorithms, operating systems, machine learning, reinforcement learning, artificial intelligence, web design, and computer vision.
+                    </p>
+                </section>
             </main>
 
             {/* Right Sidebar (visible on lg screens and up) */}
-            <aside className="bg-white p-6 rounded-lg shadow-md max-h-fit lg:col-span-1 order-3 md:col-span-3 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
+            <aside className="bg-white p-6 rounded-lg shadow-md h-fit lg:col-span-1 order-3 md:col-span-3 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
                 
                 <ol className="relative border-s border-gray-200 dark:border-gray-700">
                     <li className="mb-10 ms-4">
