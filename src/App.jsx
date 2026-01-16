@@ -77,7 +77,7 @@ function App() {
             <HashRouter basename="/">
                 <Header isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
                 <Routes>
-                    <Route path='/' element={<Home/>}/>
+                    <Route path='/' element={<Home isDark={isDarkTheme}/>}/>
                     <Route path='/about' element={<About />}/>
                     <Route path='/contact' element={<Contact />}/>
                     <Route path='/*' element={<NotFound />}/>

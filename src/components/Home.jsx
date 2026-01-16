@@ -2,7 +2,7 @@ import {useEffect} from 'react';
 import ProjectCard from './ProjectCard';
 import { Link } from 'react-router-dom';
 
-function Home() {
+function Home({isDark}) {
     // cards transition effect
     useEffect(() => {
         const cards = document.querySelectorAll(".project-card");
@@ -21,11 +21,12 @@ function Home() {
         <div className="container mx-auto flex-grow p-4 grid gap-6">
 
             {/* Main Content */}
-            <main className="bg-gray-100 p-6 rounded-lg shadow-md col-span-2  dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
+            <main className="bg-gray-100 p-6 rounded-lg shadow-md col-span-2 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl ">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Home</h2>
                 
-                <section className="">
-                    <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <section className="grid grid-cols-1 gap-6">
+                    <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6
+                    bg-gray-50 p-6 rounded-lg border-1 border-gray-300 dark:border-gray-600 shadow-md dark:bg-gray-700 dark:text-gray-200 dark:shadow-xl">
                         <img className="w-full rounded-xl" src="IMG_7231.jpg" alt="dashboard image"></img>
                         <div className="mt-4 md:mt-0">
                             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
@@ -48,11 +49,10 @@ function Home() {
                         </div>
                     </div>
                 </section>
-                
-                {/*<p className="text-gray-700 leading-relaxed mt-4 dark:text-gray-300"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis delectus inventore exercitationem quod dolorum? Iusto, voluptas reiciendis a totam, hic dicta, ullam tempora facilis expedita ipsam optio quos? Minus, facilis.</p>*/}
-            
-                <section className="bg-gray-50 p-6 rounded-lg border-1 border-gray-300 dark:border-gray-600 shadow-md col-span-2 dark:bg-gray-700 dark:text-gray-200 dark:shadow-xl antialiased ">
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+
+                <section className="mt-6">
+                    <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24 
+                    bg-gray-50 p-6 rounded-lg border-1 border-gray-300 dark:border-gray-600 shadow-md dark:bg-gray-700 dark:text-gray-200 dark:shadow-xl">
                         <div className="max-w-2xl mx-auto text-center">
                             <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
                                 Projects
@@ -62,14 +62,15 @@ function Home() {
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-                            <ProjectCard engine="React, SQL, Javascript" title="Movie Database Website" desc="A single page application to distribute informational pages about movies." link="https://github.com/derricklor/comp5130" />
-                            <ProjectCard engine="YOLO, Python, Roboflow" title="Simple Face Detection & Recognition" desc="Trained face detector and simple face recognizer that distinguishes between whitelist and unrecognized faces." link="https://github.com/derricklor/comp5230project" />
-                            <ProjectCard engine="Tensorflow, Python" title="Guitar Chord Predicton Model" desc="Used machine learning to train a model to predict the guitar chord being played." link="https://github.com/gauravmodak2001/Guitar_Chord_Pred" />
-                            <ProjectCard engine="Pygame, Python" title="AI Omok" desc="Play a game against a computer AI or a second player." link="https://github.com/derricklor/Omok" />
-                            <ProjectCard engine="Figma" title="Nature Pass" desc="An app interface that allows mobile users to explore and find hidden gems in nature." link="https://github.com/derricklor/hci-naturepass" />
-                            <ProjectCard engine="SQL, PHP, Group" title="Sunday Daycare Website" desc="A student & teacher platform for distributing reading assignments and materials." link="https://github.com/derricklor/database2project" />
-                            <ProjectCard engine="Unity, C#, Group" title="Dungeon Quest" desc="Educational quiz game for 6th graders and above." link="https://derricklor.github.io/SWEProject/Website" />
+                        <div className="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2">
+                            <ProjectCard engine="MERN Stack" title="Spyfall Web App" desc="Lie and deceit. The goal of the spy is to correctly guess the location, meanwhile the others players must deduce and vote out the spy. A recreation of the classic party game in your browser." link="https://github.com/derricklor/Spyfall" img="sf_light.png" />
+                            <ProjectCard engine="React, SQL, Javascript" title="Movie Database Website" desc="A single page application to distribute informational pages about movies." link="https://github.com/derricklor/comp5130" img="moveidb.png"/>
+                            <ProjectCard engine="YOLO, Python, Roboflow" title="Simple Face Detection & Recognition" desc="Trained face detector and simple face recognizer that distinguishes between whitelist and unrecognized faces." link="https://github.com/derricklor/comp5230project" img="simplefacedetector.png"/>
+                            <ProjectCard engine="Tensorflow, Python" title="Guitar Chord Predicton Model" desc="Used machine learning to train a model to predict the guitar chord being played." link="https://github.com/gauravmodak2001/Guitar_Chord_Pred" img="2dcnn_visual.png"/>
+                            <ProjectCard engine="Pygame, Python" title="AI Omok" desc="Play a game against a computer AI or a second player." link="https://github.com/derricklor/Omok" img="omok.png"/>
+                            <ProjectCard engine="Figma" title="Nature Pass" desc="An app interface that allows mobile users to explore and find hidden gems in nature." link="https://github.com/derricklor/hci-naturepass" img="naturepass.png"/>
+                            <ProjectCard engine="SQL, PHP, Group" title="Sunday Daycare Website" desc="A student & teacher platform for distributing reading assignments and materials." link="https://github.com/derricklor/database2project" img="daycarediagram.png"/>
+                            <ProjectCard engine="Unity, C#, Group" title="Dungeon Quest" desc="Educational quiz game for 6th graders and above." link="https://derricklor.github.io/SWEProject/Website" img="dungeonquest.png"/>
                         </div>
 
                         <div className="mt-16 max-w-2xl mx-auto text-center">
