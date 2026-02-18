@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer({ isDarkTheme, toggleTheme }) {
     return (
-        <footer className="bg-gray-800 text-white p-4 mt-6 shadow-inner rounded-t-lg">
+        <footer className=" p-4 shadow-lg bg-transparent text-black dark:text-white ">
             <div className="container mx-auto text-center text-sm">
                 <p>&copy; 2025 Responsive Layout. All rights reserved.</p>
                 <p className="mt-2">Designed with <span className="text-red-400">&hearts;</span> using Tailwind CSS.</p>
@@ -10,7 +10,7 @@ function Footer({ isDarkTheme, toggleTheme }) {
                     <button
                         id="theme-toggle"
                         onClick={toggleTheme}
-                        className="p-2 rounded-full bg-transparent hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 transition-all duration-300"
+                        className="p-2 rounded-full bg-transparent hover:bg-black/20 dark:hover:bg-white/20 transition-all duration-300 ease-in-out"
                     >
                         {/* Sun Icon (shown in dark mode) */}
                         <svg
@@ -25,7 +25,7 @@ function Footer({ isDarkTheme, toggleTheme }) {
                         {/* Moon Icon (shown in light mode) */}
                         <svg
                             id="moon-icon"
-                            className={`h-6 w-6 text-white ${isDarkTheme ? 'hidden' : ''}`}
+                            className={`h-6 w-6 text-black ${isDarkTheme ? 'hidden' : ''}`}
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             stroke="currentColor"

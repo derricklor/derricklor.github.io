@@ -3,18 +3,19 @@ import {Link} from 'react-router-dom';
 
 function Header({ isDarkTheme, toggleTheme }) {
     return (
-        <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 shadow-lg rounded-b-lg">
+        <header className="p-4 shadow-lg bg-zinc-50 dark:bg-zinc-700 border rounded-lg m-6 text-black 
+        border-zinc-500 dark:text-white dark:border-zinc-400 ">
             <div className="container mx-auto flex justify-between items-center">
                 <h1 className="text-2xl font-bold">Derrick Lor</h1>
                 <nav className="flex items-center space-x-4">
                     <ul className="flex space-x-4">
-                        <Link to="/"><li className="hover:text-blue-200 transition-colors duration-300">
+                        <Link to="/"><li className="hover:text-zinc-400 transition-colors duration-300">
                             Home</li>
                         </Link>
-                        <Link to="/about"><li className="hover:text-blue-200 transition-colors duration-300">
+                        <Link to="/about"><li className="hover:text-zinc-400 transition-colors duration-300">
                             About</li>
                         </Link>
-                        <Link to="/contact"><li className="hover:text-blue-200 transition-colors duration-300">
+                        <Link to="/contact"><li className="hover:text-zinc-400 transition-colors duration-300">
                             Contact</li>
                         </Link>
                     </ul>
@@ -22,7 +23,7 @@ function Header({ isDarkTheme, toggleTheme }) {
                     <button
                         id="theme-toggle"
                         onClick={toggleTheme}
-                        className="p-2 rounded-full bg-transparent hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 transition-all duration-300"
+                        className="p-2 rounded-full bg-transparent hover:bg-black/20 dark:hover:bg-white/20 transition-all duration-300"
                     >
                         {/* Sun Icon (shown in dark mode) */}
                         <svg
@@ -37,7 +38,7 @@ function Header({ isDarkTheme, toggleTheme }) {
                         {/* Moon Icon (shown in light mode) */}
                         <svg
                             id="moon-icon"
-                            className={`h-6 w-6 text-white ${isDarkTheme ? 'hidden' : ''}`}
+                            className={`h-6 w-6 text-black ${isDarkTheme ? 'hidden' : ''}`}
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             stroke="currentColor"

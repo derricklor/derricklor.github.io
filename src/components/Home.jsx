@@ -21,22 +21,22 @@ function Home({isDark}) {
         <div className="container mx-auto flex-grow p-4 grid gap-6">
 
             {/* Main Content */}
-            <main className="bg-gray-100 p-6 rounded-lg shadow-md col-span-2 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl ">
-                <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Home</h2>
+            <main className="bg-zinc-100 p-6 rounded-lg shadow-md col-span-2 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl ">
                 
                 <section className="grid grid-cols-1 gap-6">
                     <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6
-                    bg-gray-50 p-6 rounded-lg border-1 border-gray-300 dark:border-gray-600 shadow-md dark:bg-gray-700 dark:text-gray-200 dark:shadow-xl">
+                    bg-zinc-50 p-6 rounded-lg border-1 border-zinc-300 dark:border-zinc-600 shadow-md dark:bg-zinc-700 dark:text-zinc-200 dark:shadow-xl">
                         <img className="w-full rounded-xl" src="IMG_7231.jpg" alt="dashboard image"></img>
                         <div className="mt-4 md:mt-0">
-                            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-black dark:text-white">
                                 Derrick Lor
                             </h2>
-                            <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+                            <p className="mb-6 font-light text-zinc-500 md:text-lg dark:text-zinc-400">
                                 M.S. Graduate of University of Massachusetts Lowell. Interested in C++, HTML, CSS, Javascript, Python, Machine Learning, AI, MySQL, etc.
                             </p>
                             <Link to="/about">
-                                <button className="flex py-3 px-5 text-sm font-medium text-center text-black dark:text-gray-300 rounded-lg bg-gradient-to-r from-blue-200 to-purple-200 dark:from-blue-900 dark:to-purple-900 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                <button className="flex py-3 px-5 text-sm font-medium text-center text-black dark:text-zinc-300 
+                                border border-zinc-500 dark:border-zinc-50 rounded-lg hover:bg-zinc-300 dark:hover:bg-zinc-800 transition duration-300">
                                     About
                                     <svg aria-hidden="true" className="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                         fill="currentColor">
@@ -52,12 +52,12 @@ function Home({isDark}) {
 
                 <section className="mt-6">
                     <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24 
-                    bg-gray-50 p-6 rounded-lg border-1 border-gray-300 dark:border-gray-600 shadow-md dark:bg-gray-700 dark:text-gray-200 dark:shadow-xl">
+                    bg-zinc-50 p-6 rounded-lg border-1 border-zinc-300 dark:border-zinc-600 shadow-md dark:bg-zinc-700 dark:text-zinc-200 dark:shadow-xl">
                         <div className="max-w-2xl mx-auto text-center">
-                            <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+                            <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-black sm:text-4xl dark:text-white">
                                 Projects
                             </h2>
-                            <p className="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
+                            <p className="mt-4 text-base font-normal text-zinc-500 sm:text-xl dark:text-zinc-400">
                                 Explore my coding projects!
                             </p>
                         </div>
@@ -74,7 +74,7 @@ function Home({isDark}) {
                         </div>
 
                         <div className="mt-16 max-w-2xl mx-auto text-center">
-                            <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+                            <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-black sm:text-4xl dark:text-white">
                                 My other webapps
                             </h2>
                         </div>

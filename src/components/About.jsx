@@ -6,16 +6,16 @@ function About() {
         <div className="container mx-auto flex-grow p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
             {/* Left Sidebar (visible on md screens and up) */}
-            <aside className="bg-white p-6 rounded-lg shadow-md h-fit md:col-span-1 lg:col-span-1 order-2 md:order-1 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
-                <h2 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">Derrick Lor</h2>
+            <aside className="bg-white p-6 rounded-lg shadow-md h-fit md:col-span-1 lg:col-span-1 order-2 md:order-1 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
+                <h2 className="text-xl font-semibold mb-2 text-zinc-800 dark:text-zinc-100">Derrick Lor</h2>
                 
                 <img className="w-full block mb-2 rounded-xl" src="/profilepic_derricklor.png" alt="profile image"></img>
-                <span class="bg-gray-300 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-gray-300">
+                <span class="bg-zinc-300 text-zinc-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-zinc-700 dark:text-zinc-300">
                     Software Developer
                 </span>
-                <Notice color="gray" message={
+                <Notice color="zinc" message={
                     <div>
-                        <p className="text-gray-700 leading-relaxed mb-4 text-xs dark:text-gray-300">
+                        <p className="text-zinc-700 leading-relaxed mb-4 text-xs dark:text-zinc-300">
                             Social Media Links:
                         </p>
 
@@ -57,20 +57,20 @@ function About() {
             </aside>
 
             {/* Main Content */}
-            <main className="bg-white p-6 rounded-lg shadow-md md:col-span-2 lg:col-span-2 order-1 md:order-2 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+            <main className="bg-white p-6 rounded-lg shadow-md md:col-span-2 lg:col-span-2 order-1 md:order-2 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
+                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-black dark:text-white">
                     About
                 </h2>
-                <section className="border-1 border-gray-200 p-2 rounded-lg dark:border-gray-700">
-                    <p className="text-gray-700 leading-relaxed dark:text-gray-300">
+                <section className="border-1 border-zinc-200 p-2 rounded-lg dark:border-zinc-700">
+                    <p className="text-zinc-700 leading-relaxed dark:text-zinc-300">
                         I am a software developer with a passion for creating efficient and user-friendly applications. My expertise lies in full-stack development, and I enjoy working with modern technologies to build scalable solutions.
                     </p>
                 </section>
 
                 <br></br>
 
-                <section className="border-1 border-gray-200 p-2 rounded-lg dark:border-gray-700">
-                    <p className="text-gray-700 leading-relaxed mb-4 dark:text-gray-300">
+                <section className="border-1 border-zinc-200 p-2 rounded-lg dark:border-zinc-700">
+                    <p className="text-zinc-700 leading-relaxed mb-4 dark:text-zinc-300">
                         I started my journey in programming during my high school years, where I discovered my love for coding. 
                         Since then, I have honed my skills through college by building various projects either solo or with collaborations.
                         I graduated with a Bachelor's degree in Computer Science in 2022, and I am always eager to learn new technologies and improve my skills.
@@ -79,8 +79,8 @@ function About() {
                 
                 <br></br>
 
-                <section className="border-1 border-gray-200 p-2 rounded-lg dark:border-gray-700">
-                    <p className="text-gray-700 leading-relaxed mb-4 dark:text-gray-300">
+                <section className="border-1 border-zinc-200 p-2 rounded-lg dark:border-zinc-700">
+                    <p className="text-zinc-700 leading-relaxed mb-4 dark:text-zinc-300">
                         In 2025, I completed my Master's degree program in General Computer Science, which further deepened my understanding of computer science disciplines 
                         like algorithms, operating systems, machine learning, reinforcement learning, artificial intelligence, web design, and computer vision.
                     </p>
@@ -88,38 +88,38 @@ function About() {
             </main>
 
             {/* Right Sidebar (visible on lg screens and up) */}
-            <aside className="bg-white p-6 rounded-lg shadow-md h-fit lg:col-span-1 order-3 md:col-span-3 dark:bg-gray-800 dark:text-gray-200 dark:shadow-xl">
+            <aside className="bg-white p-6 rounded-lg shadow-md h-fit lg:col-span-1 order-3 md:col-span-3 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
                 
-                <ol className="relative border-s border-gray-200 dark:border-gray-700">
+                <ol className="relative border-s border-zinc-200 dark:border-zinc-700">
                     <li className="mb-10 ms-4">
-                        <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                        <div className="absolute w-3 h-3 bg-zinc-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-black dark:bg-zinc-700"></div>
+                        <time className="mb-1 text-sm font-normal leading-none text-zinc-400 dark:text-zinc-500">
                             May 2022</time>
-                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                        <h3 className="text-lg font-semibold text-black dark:text-white">
                             Graduated Bachelor's in CS</h3>
-                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                        <p className="mb-4 text-base font-normal text-zinc-500 dark:text-zinc-400">
                             University of Massachusetts, Lowell, MA.
                             Overall GPA: 3.514, GPA in Major: 3.703
                         </p>
                     </li>
                     <li className="mb-10 ms-4">
-                        <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                        <div className="absolute w-3 h-3 bg-zinc-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-black dark:bg-zinc-700"></div>
+                        <time className="mb-1 text-sm font-normal leading-none text-zinc-400 dark:text-zinc-500">
                             May 2025</time>
-                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                        <h3 className="text-lg font-semibold text-black dark:text-white">
                             Graduated Master's in CS</h3>
-                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                        <p className="mb-4 text-base font-normal text-zinc-500 dark:text-zinc-400">
                             University of Massachusetts, Lowell, MA.
                             Cumulative GPA 3.81
                         </p>
                     </li>
                     <li className="mb-10 ms-4">
-                        <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                        <div className="absolute w-3 h-3 bg-zinc-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-black dark:bg-zinc-700"></div>
+                        <time className="mb-1 text-sm font-normal leading-none text-zinc-400 dark:text-zinc-500">
                             Onwards</time>
-                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                        <h3 className="text-lg font-semibold text-black dark:text-white">
                             Working on it!</h3>
-                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                        <p className="mb-4 text-base font-normal text-zinc-500 dark:text-zinc-400">
                             ...
                         </p>
                     </li>
