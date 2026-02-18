@@ -6,7 +6,7 @@ export default function ProjectCard({ engine, title, desc, link, img}) {
         dark:text-gray-200 dark:shadow-md dark:hover:shadow-xl antialiased ">
             {img &&
                 <a href={link} title={'View ' + title} target="_blank">
-                    <img src={img} alt={title} className="w-full h-64 object-cover" />
+                    <img src={img} alt={title} className="w-full h-64 object-cover rounded-t-lg" />
                 </a>
             }
                 <div className="text-center p-6">
