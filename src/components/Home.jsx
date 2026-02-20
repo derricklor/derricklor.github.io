@@ -18,15 +18,16 @@ function Home({isDark}) {
     }, []);
     
     return (
-        <div className="container mx-auto flex-grow p-4 grid gap-6">
+        <div className="container mx-auto flex-grow p-4 grid gap-6 mt-[6rem]">
 
             {/* Main Content */}
-            <main className="bg-zinc-100 p-6 rounded-lg shadow-md col-span-2 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl ">
+            <main className="bg-zinc-100 p-6 rounded-[3rem] shadow-md col-span-2 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl ">
                 
                 <section className="grid grid-cols-1 gap-6">
                     <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6
-                    bg-zinc-50 p-6 rounded-lg border-1 border-zinc-300 dark:border-zinc-600 shadow-md dark:bg-zinc-700 dark:text-zinc-200 dark:shadow-xl">
-                        <img className="w-full rounded-xl" src="IMG_7231.jpg" alt="dashboard image"></img>
+                    bg-zinc-50 p-6 rounded-[2rem] border-1 border-zinc-300 dark:border-zinc-600 shadow-md dark:bg-zinc-700 dark:text-zinc-200 dark:shadow-xl">
+                        
+                        <img className="w-full rounded-[1rem]" src="IMG_7231.jpg" alt="dashboard image"></img>
                         <div className="mt-4 md:mt-0">
                             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-black dark:text-white">
                                 Derrick Lor
@@ -36,7 +37,7 @@ function Home({isDark}) {
                             </p>
                             <Link to="/about">
                                 <button className="flex py-3 px-5 text-sm font-medium text-center text-black dark:text-zinc-300 
-                                border border-zinc-500 dark:border-zinc-50 rounded-lg hover:bg-zinc-300 dark:hover:bg-zinc-800 transition duration-300">
+                                border border-zinc-500 dark:border-zinc-50 rounded-[1rem] hover:bg-zinc-300 dark:hover:bg-zinc-800 transition duration-300">
                                     About
                                     <svg aria-hidden="true" className="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                         fill="currentColor">
@@ -51,9 +52,9 @@ function Home({isDark}) {
                 </section>
 
                 <section className="mt-6">
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24 
-                    bg-zinc-50 p-6 rounded-lg border-1 border-zinc-300 dark:border-zinc-600 shadow-md dark:bg-zinc-700 dark:text-zinc-200 dark:shadow-xl">
-                        <div className="max-w-2xl mx-auto text-center">
+                    <div className="max-w-screen-xl py-12 px-6 mx-auto rounded-[2rem] shadow-md dark:shadow-xl
+                    bg-zinc-50  border-1 border-zinc-300 dark:border-zinc-600 dark:bg-zinc-700 dark:text-zinc-200 ">
+                        <div className="mx-auto text-center">
                             <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-black sm:text-4xl dark:text-white">
                                 Projects
                             </h2>
@@ -62,7 +63,7 @@ function Home({isDark}) {
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2">
+                        <div className="grid grid-cols-1 mt-12 text-center gap-12 lg:grid-cols-2">
                             <ProjectCard engine="MERN Stack" title="Spyfall Web App" desc="Lie and deceit. The goal of the spy is to correctly guess the location, meanwhile the others players must deduce and vote out the spy. A recreation of the classic party game in your browser." link="https://github.com/derricklor/Spyfall" img="sf_light.png" />
                             <ProjectCard engine="React, SQL, Javascript" title="Movie Database Website" desc="A single page application to distribute informational pages about movies." link="https://github.com/derricklor/comp5130" img="moveidb.png"/>
                             <ProjectCard engine="YOLO, Python, Roboflow" title="Simple Face Detection & Recognition" desc="Trained face detector and simple face recognizer that distinguishes between whitelist and unrecognized faces." link="https://github.com/derricklor/comp5230project" img="simplefacedetector.png"/>
@@ -79,7 +80,7 @@ function Home({isDark}) {
                             </h2>
                         </div>
 
-                        <div className="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+                        <div className="grid grid-cols-1 mt-12 text-center gap-12 sm:grid-cols-2 lg:grid-cols-3">
                             <ProjectCard engine="React, Javascript" title="Lights Out Mini Game" desc="A fun game where you must turn off all the lights." link="https://derricklor.github.io/LightsOutMiniGame" />
                             <ProjectCard engine="React, Javascript" title="Unix Timestamp Generator" desc="Enter a data and time to generate a Unix Timestamp." link="https://derricklor.github.io/UnixTimeStampGenerator" />
                             <ProjectCard engine="React, Javascript" title="OllamaChat" desc="A web interface for interacting with Ollama local models." link="https://github.com/derricklor/ollamachat" />

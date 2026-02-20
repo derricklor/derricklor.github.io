@@ -3,11 +3,13 @@ import {Link} from 'react-router-dom';
 
 function Header({ isDarkTheme, toggleTheme }) {
     return (
-        <header className="p-4 shadow-lg bg-zinc-50 dark:bg-zinc-700 border rounded-lg m-6 text-black 
-        border-zinc-500 dark:text-white dark:border-zinc-400 ">
+        <header className="fixed w-fit z-10 py-4 px-6 shadow-lg backdrop-blur-md rounded-[5vh] m-6 text-lg left-1/2 -translate-x-1/2
+        bg-white/10 dark:bg-black/30
+        border border-black/30 dark:border-white/30
+        text-black dark:text-white ">
             <div className="container mx-auto flex justify-between items-center">
-                <h1 className="text-2xl font-bold">Derrick Lor</h1>
                 <nav className="flex items-center space-x-4">
+                <h1 className="text-2xl font-bold">Derrick Lor</h1>
                     <ul className="flex space-x-4">
                         <Link to="/"><li className="hover:text-zinc-400 transition-colors duration-300">
                             Home</li>

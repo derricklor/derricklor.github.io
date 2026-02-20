@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Contact() {
     return (
-        <div className="flexbox mx-auto flex-grow p-8 gap-6 ">
-            <section className="bg-white rounded-lg shadow-md w-fit dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
+        <div className="flexbox mx-auto flex-grow p-8 gap-6 mt-[6rem]">
+            <section className="bg-white rounded-[1rem] shadow-md w-fit dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
                     <div className="p-8 mx-auto max-w-screen-md">
                         <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-center text-black dark:text-white">
                             Contact Me</h2>
@@ -26,7 +26,7 @@ export default function Contact() {
                                 <textarea id="message" rows="6" name="message" className="block p-2.5 w-full text-sm text-black bg-zinc-50 rounded-lg shadow-sm border border-zinc-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-zinc-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave your message here."></textarea>
                             </div>
                             <button type="submit" className="flex py-3 px-5 text-sm font-medium text-center text-black dark:text-zinc-300 
-                                border border-zinc-500 dark:border-zinc-50 rounded-lg hover:bg-zinc-300 dark:hover:bg-zinc-900 transition duration-300">
+                                border border-zinc-500 dark:border-zinc-50 rounded-[1rem] hover:bg-zinc-300 dark:hover:bg-zinc-900 transition duration-300">
                                     Send message</button>
                         
                         </form>

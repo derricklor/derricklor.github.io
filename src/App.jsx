@@ -72,7 +72,7 @@ function App() {
 
     return (
         // Body with base light mode styles and dark mode variants
-        <div className="flex flex-col min-h-screen font-inter bg-zinc-200 text-zinc-900 
+        <div className="flex flex-col min-h-screen font-inter bg-zinc-200 text-zinc-900
         transition-colors duration-300 dark:bg-zinc-900 dark:text-zinc-100">
 
             <HashRouter basename="/">

@@ -4,8 +4,8 @@ function Footer({ isDarkTheme, toggleTheme }) {
     return (
         <footer className=" p-4 shadow-lg bg-transparent text-black dark:text-white ">
             <div className="container mx-auto text-center text-sm">
-                <p>&copy; 2025 Responsive Layout. All rights reserved.</p>
-                <p className="mt-2">Designed with <span className="text-red-400">&hearts;</span> using Tailwind CSS.</p>
+                <p>Copyright &copy; 2026 Derrick Lor. All rights reserved.</p>
+                <p className="mt-2">Designed using Tailwind CSS.</p>
                 {/* Theme Toggle Button */}
                     <button
                         id="theme-toggle"

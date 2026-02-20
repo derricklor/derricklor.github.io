@@ -3,13 +3,13 @@ import Notice from './Notice';
 
 function About() {
     return (
-        <div className="container mx-auto flex-grow p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="container mx-auto flex-grow p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-[6rem]">
 
             {/* Left Sidebar (visible on md screens and up) */}
-            <aside className="bg-white p-6 rounded-lg shadow-md h-fit md:col-span-1 lg:col-span-1 order-2 md:order-1 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
+            <aside className="bg-white p-6 rounded-[1rem] shadow-md h-fit md:col-span-1 lg:col-span-1 order-2 md:order-1 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
                 <h2 className="text-xl font-semibold mb-2 text-zinc-800 dark:text-zinc-100">Derrick Lor</h2>
                 
-                <img className="w-full block mb-2 rounded-xl" src="/profilepic_derricklor.png" alt="profile image"></img>
+                <img className="w-full block mb-2 rounded-[1rem]" src="/profilepic_derricklor.png" alt="profile image"></img>
                 <span class="bg-zinc-300 text-zinc-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-zinc-700 dark:text-zinc-300">
                     Software Developer
                 </span>
@@ -57,7 +57,7 @@ function About() {
             </aside>
 
             {/* Main Content */}
-            <main className="bg-white p-6 rounded-lg shadow-md md:col-span-2 lg:col-span-2 order-1 md:order-2 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
+            <main className="bg-white p-6 rounded-[1rem] shadow-md md:col-span-2 lg:col-span-2 order-1 md:order-2 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-black dark:text-white">
                     About
                 </h2>
@@ -88,7 +88,7 @@ function About() {
             </main>
 
             {/* Right Sidebar (visible on lg screens and up) */}
-            <aside className="bg-white p-6 rounded-lg shadow-md h-fit lg:col-span-1 order-3 md:col-span-3 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
+            <aside className="bg-white p-6 rounded-[1rem] shadow-md h-fit lg:col-span-1 order-3 md:col-span-3 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
                 
                 <ol className="relative border-s border-zinc-200 dark:border-zinc-700">
                     <li className="mb-10 ms-4">
