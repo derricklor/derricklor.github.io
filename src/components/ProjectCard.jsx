@@ -1,9 +1,11 @@
 export default function ProjectCard({ engine, title, desc, link, img}) {
 
     return (
-        <div className="project-card space-y-4 opacity-0 translate-y-10 transition-all duration-700 
-        border-2 border-zinc-300 bg-white rounded-lg shadow-md hover:shadow-xl dark:border-zinc-600 dark:bg-zinc-600 
-        dark:text-zinc-200 dark:shadow-md dark:hover:shadow-xl antialiased ">
+        <div className="project-card space-y-4 opacity-0 translate-y-10 rounded-lg
+        transition-all duration-700 hover:scale-103
+        bg-white border-2 border-zinc-300 dark:border-zinc-600 dark:bg-zinc-600 
+        dark:text-zinc-200 
+        shadow-md hover:shadow-xl antialiased ">
             {img &&
                 <a href={link} title={'View ' + title} target="_blank">
                     <img src={img} alt={title} className="w-full h-64 object-cover rounded-t-lg" />
@@ -20,8 +22,10 @@ export default function ProjectCard({ engine, title, desc, link, img}) {
                         {desc}
                     </p>
                     <a href={link} title={'View ' + title} target="_blank"
-                        className="text-black dark:text-zinc-300 justify-center inline-flex items-center font-medium mt-4
-                        rounded-lg text-sm px-5 py-2.5 text-center border border-zinc-500 dark:border-zinc-50 hover:bg-zinc-300 dark:hover:bg-zinc-800 transition duration-300"
+                    className="text-black dark:text-zinc-300 text-sm text-center justify-center inline-flex items-center font-medium 
+                        rounded-[1rem] px-5 py-2.5 mt-4
+                        border border-zinc-500 dark:border-zinc-50 hover:bg-zinc-300 dark:hover:bg-zinc-800 
+                        transition duration-300"
                         role="button">
                         View
                         <svg aria-hidden="true" className="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
