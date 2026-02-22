@@ -18,18 +18,18 @@ function Home({isDark}) {
     }, []);
     
     return (
-        <div className="container mx-auto flex-grow p-4 grid gap-6 mt-[6rem]">
+        <div className=" flex-grow">
 
             {/* Main Content */}
-            <main className="bg-zinc-100 p-6 rounded-[3rem] shadow-md col-span-2 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl ">
+            <main className="bg-zinc-100 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
                 
-                <section className="grid grid-cols-1 gap-6">
-                    <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6
+                <section className="bg-radial from-zinc-200 to-blue-50 p-6 dark:from-zinc-700 dark:to-blue-800/10">
+                    <div className="gap-8 items-center py-8 px-4 mx-auto mt-[4rem] max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6
                     bg-zinc-50 p-6 rounded-[2rem] border-1 border-zinc-300 dark:border-zinc-600 shadow-md dark:bg-zinc-700 dark:text-zinc-200 dark:shadow-xl">
                         
                         <img className="w-full rounded-[1rem]" src="IMG_7231.jpg" alt="dashboard image"></img>
                         <div className="mt-4 md:mt-0">
-                            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-black dark:text-white">
+                            <h2 className="mb-4 text-4xl font-bold text-black dark:text-white">
                                 Derrick Lor
                             </h2>
                             <p className="mb-6 font-light text-zinc-500 md:text-lg dark:text-zinc-400">
@@ -51,11 +51,11 @@ function Home({isDark}) {
                     </div>
                 </section>
 
-                <section className="mt-6">
+                <section className="bg-radial from-zinc-200 to-green-50 p-6 dark:from-zinc-700 dark:to-green-800/10">
                     <div className="max-w-screen-xl py-12 px-6 mx-auto rounded-[2rem] shadow-md dark:shadow-xl
                     bg-zinc-50  border-1 border-zinc-300 dark:border-zinc-600 dark:bg-zinc-700 dark:text-zinc-200 ">
                         <div className="mx-auto text-center">
-                            <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-black sm:text-4xl dark:text-white">
+                            <h2 className="text-3xl font-bold text-black sm:text-4xl dark:text-white">
                                 Projects
                             </h2>
                             <p className="mt-4 text-base font-normal text-zinc-500 sm:text-xl dark:text-zinc-400">
@@ -74,17 +74,23 @@ function Home({isDark}) {
                             <ProjectCard engine="Unity, C#, Group" title="Dungeon Quest" desc="Educational quiz game for 6th graders and above." link="https://derricklor.github.io/SWEProject/Website" img="dungeonquest.png"/>
                         </div>
 
-                        <div className="mt-16 max-w-2xl mx-auto text-center">
-                            <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-black sm:text-4xl dark:text-white">
-                                My other webapps
+                        
+                    </div>
+                </section>
+                <section className="bg-radial from-zinc-200 to-yellow-50 p-6 dark:from-zinc-700 dark:to-yellow-800/10">
+                    <div className="max-w-screen-xl py-12 px-6 mx-auto rounded-[2rem] shadow-md dark:shadow-xl
+                    bg-zinc-50  border-1 border-zinc-300 dark:border-zinc-600 dark:bg-zinc-700 dark:text-zinc-200 ">
+                    <div className="mx-auto text-center">
+                            <h2 className="text-3xl font-bold leading-tight tracking-tight text-black sm:text-4xl dark:text-white">
+                                My other web apps
                             </h2>
-                        </div>
+                            </div>
 
-                        <div className="grid grid-cols-1 mt-12 text-center gap-12 sm:grid-cols-2 lg:grid-cols-3">
-                            <ProjectCard engine="React, Javascript" title="Lights Out Mini Game" desc="A fun game where you must turn off all the lights." link="https://derricklor.github.io/LightsOutMiniGame" />
-                            <ProjectCard engine="React, Javascript" title="Unix Timestamp Generator" desc="Enter a data and time to generate a Unix Timestamp." link="https://derricklor.github.io/UnixTimeStampGenerator" />
-                            <ProjectCard engine="React, Javascript" title="OllamaChat" desc="A web interface for interacting with Ollama local models." link="https://github.com/derricklor/ollamachat" />
-                        </div>
+                    <div className="grid grid-cols-1 mt-12 text-center gap-12 sm:grid-cols-2 lg:grid-cols-3">
+                        <ProjectCard engine="React, Javascript" title="Lights Out Mini Game" desc="A fun game where you must turn off all the lights." link="https://derricklor.github.io/LightsOutMiniGame" />
+                        <ProjectCard engine="React, Javascript" title="Unix Timestamp Generator" desc="Enter a data and time to generate a Unix Timestamp." link="https://derricklor.github.io/UnixTimeStampGenerator" />
+                        <ProjectCard engine="React, Javascript" title="OllamaChat" desc="A web interface for interacting with Ollama local models." link="https://github.com/derricklor/ollamachat" />
+                    </div>
                     </div>
                 </section>
             </main>

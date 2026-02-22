@@ -2,7 +2,9 @@ import React from 'react';
 
 function Footer({ isDarkTheme, toggleTheme }) {
     return (
-        <footer className=" p-4 shadow-lg bg-transparent text-black dark:text-white ">
+        <footer className="text-black dark:text-white mt-auto
+        border-t border-zinc-300 dark:border-zinc-700
+        bg-radial from-zinc-200 to-zinc-50 p-6 dark:from-zinc-700 dark:to-zinc-800">
             <div className="container mx-auto text-center text-sm">
                 <p>Copyright &copy; 2026 Derrick Lor. All rights reserved.</p>
                 <p className="mt-2">Designed using Tailwind CSS.</p>

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 function Header({ isDarkTheme, toggleTheme }) {
     return (
-        <header className="fixed z-10 py-4 px-6 shadow-lg backdrop-blur-md rounded-[5vh] m-6 text-lg left-1/2 -translate-x-1/2 ml-0
+        <header className="fixed z-10 py-4 px-6 shadow-lg backdrop-blur-md rounded-[5vh] m-2 text-lg left-1/2 -translate-x-1/2 ml-0
         bg-white/10 hover:bg-white/50 dark:hover:bg-white/20 
         transition duration-500 ease-in-out
         border border-black/30 dark:border-white/30
