@@ -22,10 +22,10 @@ function Home({isDark}) {
 
             {/* Main Content */}
             <main className="bg-zinc-100 dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
-                
                 <section className="bg-radial from-zinc-200 to-blue-50 p-6 dark:from-zinc-700 dark:to-blue-800/10">
                     <div className="gap-8 items-center py-8 px-4 mx-auto mt-[4rem] max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6
-                    bg-zinc-50 p-6 rounded-[2rem] border-1 border-zinc-300 dark:border-zinc-600 shadow-md dark:bg-zinc-700 dark:text-zinc-200 dark:shadow-xl">
+                    bg-zinc-50 p-6 rounded-[2rem] shadow-md dark:bg-zinc-700 dark:text-zinc-200 dark:shadow-xl
+                    border-1 border-zinc-300 dark:border-zinc-600">
                         
                         <img className="w-full rounded-[1rem]" src="IMG_7231.jpg" alt="dashboard image"></img>
                         <div className="mt-4 md:mt-0">

@@ -7,7 +7,8 @@ export default function Contact() {
             <div className="container mx-auto p-4 gap-6 mt-[5rem] ">
 
                 <section className="bg-white rounded-[1rem] shadow-md w-fit mx-auto 
-                dark:bg-zinc-800 dark:text-zinc-200 dark:shadow-xl">
+                dark:bg-zinc-800 dark:text-zinc-200 
+                border-1 border-zinc-300 dark:border-zinc-600">
                     <div className="p-8 mx-auto max-w-screen-md">
                         <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-center text-black dark:text-white">
                             Contact Me</h2>
