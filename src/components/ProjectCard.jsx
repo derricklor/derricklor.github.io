@@ -2,7 +2,7 @@ export default function ProjectCard({ engine, title, desc, link, img}) {
 
     return (
         <div className={`project-card space-y-4 opacity-0 translate-y-10 rounded-3xl
-            transition-all duration-700 hover:scale-103 mx-auto ${ img && `w-[80vw] h-fit md:size-[40vh]`} ${!img && `w-[40vw] h-fit md:h-[20vh]`}
+            transition-all duration-700 hover:scale-103 mx-auto ${ img && `w-[80vw] h-fit md:size-[40vh]`} ${!img && `w-[80vw] sm:w-[40vw] h-fit md:h-[20vh]`}
             bg-white border-2 border-zinc-300 dark:border-zinc-600 dark:bg-zinc-600 
             dark:text-zinc-200 
             shadow-md hover:shadow-xl antialiased `}>
