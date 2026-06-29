@@ -1,14 +1,14 @@
 export default function ProjectCard({ engine, title, desc, link, img}) {
 
     return (
-        <div className="project-card space-y-4 opacity-0 translate-y-10 rounded-lg
-            transition-all duration-700 hover:scale-103 
+        <div className={`project-card space-y-4 opacity-0 translate-y-10 rounded-3xl
+            transition-all duration-700 hover:scale-103 mx-auto ${ img && `w-[80vw] h-fit md:size-[40vh]`} ${!img && `w-[40vw] h-fit md:h-[20vh]`}
             bg-white border-2 border-zinc-300 dark:border-zinc-600 dark:bg-zinc-600 
             dark:text-zinc-200 
-            shadow-md hover:shadow-xl antialiased ">
+            shadow-md hover:shadow-xl antialiased `}>
             {img &&
                 <a href={link} title={'View ' + title} target="_blank">
-                    <img src={img} alt={title} className="w-full h-48 object-cover rounded-t-lg" />
+                    <img src={img} alt={title} className="w-full h-48 object-cover rounded-t-3xl" />
                 </a>
             }
                 <div className="flex flex-col items-center p-6">
@@ -18,12 +18,12 @@ export default function ProjectCard({ engine, title, desc, link, img}) {
                     <h3 className="text-2xl font-bold leading-tight mt-2 text-black dark:text-white">
                         {title}
                     </h3>
-                    <p className="text-lg font-normal text-zinc-500 dark:text-zinc-400 mt-4 mb-16">
+                    <p className={`text-lg font-normal text-zinc-500 dark:text-zinc-400 mt-4 sm:mb-16 md:mb-6 line-clamp-none md:line-clamp-4 ${!img && `md:line-clamp-2`}`}>
                         {desc}
                     </p>
                     <a href={link} title={'View ' + title} target="_blank"
                     className="text-black dark:text-zinc-300 text-sm justify-center inline-flex items-center font-medium 
-                        rounded-[1rem] px-5 py-2.5 absolute bottom-6
+                        rounded-[1rem] px-5 py-2.5 mt-4 md:mt-0 md:absolute md:bottom-6
                         border border-zinc-500 dark:border-zinc-50 hover:bg-zinc-300 dark:hover:bg-zinc-800 
                         transition duration-300"
                         role="button">

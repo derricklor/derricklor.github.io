@@ -11,22 +11,7 @@ import NotFound from './components/NotFound.jsx';
 // Custom scrollbar styles (cannot be directly converted to Tailwind classes or React inline styles)
 // These would typically be in a global CSS file, but for a self-contained example,
 // we'll include them as a string to be injected.
-const customScrollbarStyles = `
-    ::-webkit-scrollbar {
-        width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-        background: #e0e0e0;
-        border-radius: 10px;
-    }
-    ::-webkit-scrollbar-thumb {
-        background: #a0a0a0;
-        border-radius: 10px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        background: #888;
-    }
-`;
+
 
 function App() {
     // State to manage the current theme (true for dark, false for light)
@@ -34,10 +19,7 @@ function App() {
 
     // useEffect to handle theme initialization and persistence
     useEffect(() => {
-        // Apply custom scrollbar styles dynamically
-        const styleTag = document.createElement('style');
-        styleTag.innerHTML = customScrollbarStyles;
-        document.head.appendChild(styleTag);
+        
 
         // Check for saved theme preference on component mount
         const savedTheme = localStorage.getItem('theme');
@@ -48,10 +30,7 @@ function App() {
             setIsDarkTheme(false);
         }
 
-        // Clean up the style tag on component unmount
-        return () => {
-            document.head.removeChild(styleTag);
-        };
+        
     }, []); // Empty dependency array ensures this runs only once on mount
 
     // useEffect to apply/remove 'dark' class to body and update localStorage
